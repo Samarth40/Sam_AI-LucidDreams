@@ -1,0 +1,170 @@
+/* Base styles */
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0A0A0A 0%, #3F2A72 100%);
+  color: #F0F0F0;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Navigation styles */
+.navbar {
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(240, 240, 240, 0.1);
+}
+
+.nav-link {
+  color: #F0F0F0;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #2A96D6;
+}
+
+/* Card and container styles */
+.card {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(240, 240, 240, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.glass-panel {
+  background: rgba(10, 10, 10, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(240, 240, 240, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+/* Button styles */
+.btn {
+  background: linear-gradient(135deg, #2A96D6 0%, #B37FE7 100%);
+  color: #F0F0F0;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(42, 150, 214, 0.5);
+}
+
+/* Text styles */
+h1, h2, h3, h4, h5, h6 {
+  color: #F0F0F0;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #F0F0F0;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+}
+
+/* Form styles */
+input, textarea {
+  background: rgba(10, 10, 10, 0.5);
+  border: 1px solid rgba(240, 240, 240, 0.2);
+  color: #F0F0F0;
+  padding: 0.75rem;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #2A96D6;
+  box-shadow: 0 0 10px rgba(42, 150, 214, 0.3);
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Utility classes */
+.text-gradient {
+  background: linear-gradient(to right, #F0F0F0, #2A96D6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glow {
+  text-shadow: 0 0 10px rgba(42, 150, 214, 0.5);
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 10, 10, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A96D6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1ED3A7;
+}
+
+/* Logo styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Read the docs styles */
+.read-the-docs {
+  color: #888;
+}
